@@ -23,3 +23,6 @@ Note: Raspberry PI does not support the touch of this screen, only can display
 ## Work with CB1
 1. Uncomment `overlays=tft35_spi` in `/boot/BoardEnv.txt`. <img src=Images/BoardEnv.png width="800" /><br/> <img src=Images/tft35_spi.png width="800" /><br/>
 2. If the OS image of v2.2.1 version is used. Set to `overlays=tft35_spi25` instead of `overlays=tft35_spi` Use the SPI speed of 25Mhz instead of the default 50Mhz to avoid display confusion. If the OS image after V2.2.1 is used, The OS  will use a lower and more stable speed by default.
+
+## Touch calibration
+When having issues with the accuracy of the touchscreen, folow [these steps](https://bigtreetech.github.io/docs/libinput_calibration.html) to recalibrate the thouchscreen <br/>
